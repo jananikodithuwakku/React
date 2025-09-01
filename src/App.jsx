@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+import { useRef } from "react"
 import './App.css'
 
 //Elements usually returns with one parent element.
@@ -176,4 +178,97 @@ function App15(){
   )
 }
 
-export default App15
+function App16(){
+  const [counter, setCounter] = useState(0)
+
+  return (
+    <div><h2>You clicked {counter} times</h2>
+    <button onClick={() => setCounter(counter + 1)}>Click me</button>
+    </div>
+  )
+}
+
+function App17(){
+  const [counter, setCounter] = useState(0)
+  const [time, setTime] = useState(0)
+  function clickEvent(){
+    setCounter(counter + 1)
+    setTime(Date.now())
+  }
+
+  return(
+    <div>
+      <h2>You clicked {counter} times</h2>
+      <h3>Last Clicked time: {time}</h3>
+      <button onClick={clickEvent}>Click me</button>
+    </div>
+  )
+}
+
+function App18(){
+  const [name, setName] =useState("")
+  const [age, setAge] =useState(18)
+  const [gender, setGender] =useState("male")
+  const [registerde, setRegistered] =useState("false")
+
+  return(
+    <form>
+      <input type="text" value={name} onChange={event => setName(event.target.value)} />
+
+      <input type="number" value={age} onChange={event => setAge(event.target.value)} />
+
+      <select value={gender} onChange={event => setGender(event.target.value)}>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label>
+        <input type="checkbox" value={registerde} onChange={event => setRegistered(event.target.value)} />
+      </label>
+
+    </form>
+  )
+  
+}
+
+function App19(){
+  const [counter, setCounter] = useState(0)
+
+  useEffect(()=> { console.log("You click the button")}, [counter])
+
+  return (
+    <div><h2>You clicked {counter} times</h2>
+    <button onClick={() => setCounter(counter + 1)}>Click me</button>
+    </div>
+  )
+}
+
+function App20() {
+  const [counter, setCounter] = useState(0)
+
+  useEffect(() => { console.log("Component mounted!")}, [])
+
+  return (
+    <div>
+      <h1>You clicked {counter} times!</h1>
+      <button onClick={() => setCounter(counter + 1)}>Click Me</button>
+    </div>
+  )
+}
+
+function App21() {
+  const counter = useRef(0)
+  
+  function clickEvent() {
+    counter.current += 1 
+    console.log("You clicked ", counter.current, "times")
+  }
+
+  return (
+    <div>
+      <button onClick={clickEvent}>Click Me</button>
+    </div>
+  )
+}
+
+export default App21
