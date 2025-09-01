@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import { useRef } from "react"
+import { useEffect, useState, useRef } from 'react'
 import './App.css'
 
 //Elements usually returns with one parent element.
@@ -178,6 +177,8 @@ function App15(){
   )
 }
 
+//React Hooks
+//useState
 function App16(){
   const [counter, setCounter] = useState(0)
 
@@ -231,6 +232,7 @@ function App18(){
   
 }
 
+//useEffect
 function App19(){
   const [counter, setCounter] = useState(0)
 
@@ -271,4 +273,4 @@ function App21() {
   )
 }
 
-export default App21
+export default App9
