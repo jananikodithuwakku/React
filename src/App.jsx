@@ -112,8 +112,6 @@ function MyComponent2(props) {
     </div>
   )
 }
-
-
 function App10() {
   function select(id) {
     alert("You selected", id)
