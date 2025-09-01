@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
+import { HashRouter, Route, Routes, Link } from "react-router-dom"
 import "./App.css"
 
 import App1 from "./Pages/App1"
@@ -26,7 +26,7 @@ import App21 from "./Pages/App21"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <h2>Navigation Menu</h2>
         <ul>
           <li><Link to="/app1">Go to App 1</Link></li>
@@ -76,7 +76,7 @@ function App() {
           <Route path="/app20" element={<App20 />} />
           <Route path="/app21" element={<App21 />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
