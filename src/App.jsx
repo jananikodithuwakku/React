@@ -22,6 +22,10 @@ import App18 from "./Pages/App18"
 import App19 from "./Pages/App19"
 import App20 from "./Pages/App20"
 import App21 from "./Pages/App21"
+import Login_Page from "./Pages/Login_Page"
+import Register_Page from "./Pages/Register_Page"
+
+
 
 function App() {
   return (
@@ -51,6 +55,8 @@ function App() {
                 <li><Link to="/app19">Go to App 19</Link></li>
                 <li><Link to="/app20">Go to App 20</Link></li>
                 <li><Link to="/app21">Go to App 21</Link></li>
+                <li><Link to="/login_page">Login Assignment</Link></li>
+                <li><Link to="/register_page">Register Assignment</Link></li>
               </ul>
             </>}/>
         <Route path="/app1" element={<App1 />} />
@@ -74,6 +80,8 @@ function App() {
         <Route path="/app19" element={<App19 />} />
         <Route path="/app20" element={<App20 />} />
         <Route path="/app21" element={<App21 />} />
+        <Route path="/login_page" element={<Login_Page />} />
+        <Route path="/register_page" element={<Register_Page />} />
       </Routes>
     </HashRouter>
   )
