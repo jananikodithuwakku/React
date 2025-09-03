@@ -9,7 +9,7 @@ export default function Register() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #65b5f6ff 0%, #ebfd85ff 100%)",
+        background: "linear-gradient(135deg, #4facfe 0%, #8e44ad 100%)",
         position: "relative",
         overflow: "hidden",
       }}
@@ -17,25 +17,25 @@ export default function Register() {
       <Box
         sx={{
           position: "absolute",
-          width: 250,
-          height: 250,
+          width: 300,
+          height: 300,
           borderRadius: "50%",
           background: "radial-gradient(circle at 30% 30%, #65b5f6ff, #ebfd85ff)",
           top: "10%",
           left: "15%",
-          filter: "blur(10px)",
+          filter: "blur(60px)",
         }}
       />
       <Box
         sx={{
           position: "absolute",
-          width: 300,
-          height: 300,
+          width: 400,
+          height: 400,
           borderRadius: "50%",
           background: "radial-gradient(circle at 40% 40%, #65b5f6ff, #ebfd85ff)",
           bottom: "15%",
           right: "10%",
-          filter: "blur(8px)",
+          filter: "blur(50px)",
         }}
       />
       
@@ -104,7 +104,7 @@ export default function Register() {
           }}
         />
 
-        <Link to="/login_page"  sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
+        <Link href="/Login_Page" underline="none"  sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
           Login Already
         </Link>
         

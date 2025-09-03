@@ -9,7 +9,7 @@ export default function Login() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #65b5f6ff 0%, #ebfd85ff 100%)",
+        background: "linear-gradient(135deg, #4facfe 0%, #8e44ad 100%)",
         position: "relative",
         overflow: "hidden",
       }}
@@ -17,25 +17,25 @@ export default function Login() {
       <Box
         sx={{
           position: "absolute",
-          width: 250,
-          height: 250,
-          borderRadius: "50%",
+          width: 350,
+          height: 350,
+          borderRadius: "70%",
           background: "radial-gradient(circle at 30% 30%, #65b5f6ff, #ebfd85ff)",
-          top: "10%",
-          left: "15%",
-          filter: "blur(10px)",
+          top: "5%",
+          left: "10%",
+          filter: "blur(70px)",
         }}
       />
       <Box
         sx={{
           position: "absolute",
-          width: 300,
-          height: 300,
-          borderRadius: "50%",
+          width: 450,
+          height: 450,
+          borderRadius: "70%",
           background: "radial-gradient(circle at 40% 40%, #65b5f6ff, #ebfd85ff)",
-          bottom: "15%",
-          right: "10%",
-          filter: "blur(8px)",
+          bottom: "10%",
+          right: "5%",
+          filter: "blur(50px)",
         }}
       />
 
@@ -88,7 +88,7 @@ export default function Login() {
           }}
         />
 
-        <Link to="#" sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
+        <Link href="#" underline="none" sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
           Forgot Password?
         </Link>
 
