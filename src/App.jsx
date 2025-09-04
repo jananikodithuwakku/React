@@ -24,6 +24,7 @@ import App20 from "./Pages/App20"
 import App21 from "./Pages/App21"
 import Login_Page from "./Pages/Login_Page"
 import Register_Page from "./Pages/Register_Page"
+import Icon_Page from "./Pages/Icon_Page"
 
 
 
@@ -57,6 +58,7 @@ function App() {
                 <li><Link to="/app21">Go to App 21</Link></li>
                 <li><Link to="/login_page">Login Assignment</Link></li>
                 <li><Link to="/register_page">Register Assignment</Link></li>
+                <li><Link to="/icon_page">Icon Assignment</Link></li>
               </ul>
             </>}/>
         <Route path="/app1" element={<App1 />} />
@@ -82,6 +84,7 @@ function App() {
         <Route path="/app21" element={<App21 />} />
         <Route path="/login_page" element={<Login_Page />} />
         <Route path="/register_page" element={<Register_Page />} />
+        <Route path="/icon_page" element={<Icon_Page />} />
       </Routes>
     </HashRouter>
   )

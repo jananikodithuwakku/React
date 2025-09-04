@@ -104,7 +104,7 @@ export default function Register() {
           }}
         />
 
-        <Link href="/Login_Page" underline="none"  sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
+        <Link to="/login_page" underline="none"  sx={{ display: "block", mt: 1, mb: 2, color: "#0f0f0fff" }}>
           Login Already
         </Link>
         
